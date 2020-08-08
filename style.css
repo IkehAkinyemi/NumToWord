@@ -81,3 +81,58 @@ input:focus {
 .footer {
     margin-top: 6rem;
 }
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        margin: 2rem 3rem;
+
+    }
+
+    [alt="logo"] {
+        width: 130px;
+    }
+
+    [alt="menu"] {
+        width: 40px;
+    }
+
+    .display {
+        margin-top: 10rem;
+        font-size: 2rem;
+    }
+
+    .second-main {
+        margin-top: 10rem;
+    }
+
+    input {
+        padding: 2rem 5.5rem;
+        font-size: 1.8rem;
+    }
+
+    .digit-display {
+        font-size: 1.6rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: -5rem;
+    }
+
+    .button {
+        font-size: 1.5rem;
+        margin-right: -6rem;
+        padding: 2rem 5rem;
+    }
+
+    .footer {
+        height: 18rem;
+    }
+
+    .credits {
+        margin-top: 10rem;
+    }
+}
