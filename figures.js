@@ -1,8 +1,9 @@
 import { unitBank, toUnit, toHundredx, toHundred, toThousand, toMillion, toBillion, toTrillion, toQuadrillion, toQuintillion, toSixtillion, toSeptillion, toOctillion, toNonillion, toDecillion, toUndecillion} from './PlaceValue.js';
-
-console.log(unitBank);
-let number = document.querySelector('input');
-console.log(number)
+let display = document.querySelector('.display');
+let number = document.querySelector('input'),
+reset = document.querySelector(".button"),
+numDigit = document.querySelector('.figure'),
+digit = document.querySelector('.digit');
 
 function numToWord() {
     let val = number.value.replace(/,/g, "");
@@ -29,8 +30,19 @@ function numToWord() {
     else if (val.length > 30 && val.length <= 33) val = toNonillion(val)
     else if (val.length > 33 && val.length <= 36) val = toDecillion(val)
     else if (val.length > 36 && val.length <= 39) val = toUndecillion(val)
-    else val = "Beyond my algorithm"
-    console.log(val);
+    else val = "Beyond my algorithm";
+    display.textContent = val;
+    numDigit.textContent = number.value.length;
 };
-console.log(toHundredx('012'));
-number.addEventListener('input', numToWord)
+number.addEventListener('input', numToWord);
+number.addEventListener('input', function() {
+    if (numDigit.textContent > 1) {
+        digit.textContent = 'digits';
+    } else {
+        digit.textContent = 'digit';
+    }
+});
+reset.addEventListener('click', function() {
+    number.value = '';
+    numDigit.textContent = "0";
+})
