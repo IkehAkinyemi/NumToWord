@@ -1,7 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @media screen and (max-width: 1023px) {
     body {
         margin: 0rem;
         background: #01838B;
+        font-family: 'Roboto', sans-serif;
     }
     
     nav {
@@ -84,8 +87,9 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     body {
+        font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
     }
 
@@ -154,5 +158,66 @@
 }
 
 @media screen and (min-width: 1024px) {
-    
+    body {
+        background: url(./images/background.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .web-view {
+        text-align: center;
+        margin-top: 10rem;
+        background: #FFFFFF;
+        border-radius: 10px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .logo {
+        display: inline-block;
+        background: #01838B;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 0.6rem 3rem;
+        border-radius: 7px;
+    }
+
+    [alt="menu"] {
+        display: none;
+    }
+
+    .display {
+        display: inline-block;
+        border: 1px solid;
+        padding: 1rem 2rem;
+        background: #565353;
+        color: #C4C4C4;
+        position: relative;
+        top: 55px;
+        margin-top: 5rem;
+    }
+
+    .btn-container {
+        display: none;
+    }
+
+    input {
+        padding: 1rem 6rem;
+        text-align: center;
+        position: relative;
+        bottom: 100px;
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+        background: #EAE9E9;
+        border: 1px solid;
+    }
+
+    .footer {
+        position: relative;
+        top: 65px;
+        color: #E9E8E8;
+    }
 }
