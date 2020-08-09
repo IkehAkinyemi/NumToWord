@@ -31,7 +31,7 @@ function numToWord() {
     else if (val.length > 33 && val.length <= 36) val = toDecillion(val)
     else if (val.length > 36 && val.length <= 39) val = toUndecillion(val)
     else val = "Beyond my algorithm";
-    display.textContent = val;
+    display.textContent = val.toUpperCase();
     numDigit.textContent = number.value.length;
 };
 number.addEventListener('input', numToWord);
