@@ -40,6 +40,10 @@ number.addEventListener('input', function() {
         digit.textContent = 'digits';
     } else {
         digit.textContent = 'digit';
+    };
+
+    if (number.value == '') {
+        display.textContent = '';
     }
 });
 reset.addEventListener('click', function() {
