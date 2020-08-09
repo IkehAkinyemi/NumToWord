@@ -48,6 +48,7 @@ number.addEventListener('input', function() {
     }
 });
 reset.addEventListener('click', function() {
-    number.value = '';
-    numDigit.textContent = "0";
+    display.textContent = 'ZERO';
+    number.value = '0';
+    numDigit.textContent = "1";
 })
