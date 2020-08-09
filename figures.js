@@ -44,6 +44,7 @@ number.addEventListener('input', function() {
 
     if (number.value == '') {
         display.textContent = '';
+        numDigit.textContent = "0";
     }
 });
 reset.addEventListener('click', function() {
