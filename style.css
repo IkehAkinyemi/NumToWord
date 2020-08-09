@@ -6,6 +6,10 @@
         background: #01838B;
         font-family: 'Roboto', sans-serif;
     }
+
+    head {
+        position: fixed;
+    }
     
     nav {
         margin-top: 1rem;
